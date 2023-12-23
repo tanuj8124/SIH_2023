@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">newapp</string>
+    <string name="instructions">Instructions:\n
+
+- Use the correct username/password sent to your registered mobile for logging in to your account.
+\n
+- If you have forgotten your password or username, click on the forgot password link and enter your registered mobile number.
+\n
+- If you are not registered with our portal, click the Register
+\n
+link and follows the instructions listed there.\n
+- If you want to login with your registered mobile without the password, click the link Login with OTP and follow the instructions listed there.</string>
+    <string name="seajob">Search job according to your profile in rozgar mela </string>
+    <string-array name="district">
+        <item>amritsar</item>
+        <item>barnala</item>
+        <item>bhatinda</item>
+        <item>faridkot</item>
+        <item>fatehgarh sahib</item>
+        <item>falzilka</item>
+
+
+    </string-array>
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/box"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/logocircle"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headbar" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="@+id/logocircle"
+        app:layout_constraintEnd_toEndOf="@+id/logocircle"
+        app:layout_constraintStart_toStartOf="@+id/logocircle"
+        app:layout_constraintTop_toTopOf="@+id/logocircle"
+
+        app:srcCompat="@drawable/ghar_ghar_yojna_png_1" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/orange"
+        android:onClick="openLoginPage"
+        android:text="Click Here to login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logocircle"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:id="@+id/rozgarmela"
+        android:layout_width="147dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/lightgreen"
+
+        android:onClick="openRozgarMela"
+        android:text='""'
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+    <TextView
+        android:id="@+id/jobforeign"
+        android:layout_width="147dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/lightpink"
+
+        android:onClick="openJobSeekerRegistration"
+        android:text="''"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/rozgarmela"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+    <TextView
+        android:id="@+id/searchjobs"
+        android:layout_width="147dp"
+        android:layout_height="164dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/lightblue"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rozgarmela" />
+
+    <TextView
+        android:id="@+id/employerregistration"
+        android:layout_width="147dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/card"
+        android:backgroundTint="@color/lightorange"
+
+        android:onClick="openEmployerRegistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toEndOf="@+id/searchjobs"
+        app:layout_constraintTop_toBottomOf="@+id/jobforeign" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="99dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rozgarmela"
+        app:layout_constraintEnd_toEndOf="@+id/rozgarmela"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/rozgarmela"
+        app:layout_constraintTop_toTopOf="@+id/rozgarmela"
+        app:layout_constraintVertical_bias="0.217"
+        app:srcCompat="@drawable/employee_1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/jobforeign"
+        app:layout_constraintEnd_toEndOf="@+id/jobforeign"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/jobforeign"
+        app:layout_constraintTop_toTopOf="@+id/jobforeign"
+        app:layout_constraintVertical_bias="0.229"
+        app:srcCompat="@drawable/interview_1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="75dp"
+        android:layout_height="88dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchjobs"
+        app:layout_constraintEnd_toEndOf="@+id/searchjobs"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="@+id/searchjobs"
+        app:layout_constraintTop_toTopOf="@+id/searchjobs"
+        app:layout_constraintVertical_bias="0.381"
+        app:srcCompat="@drawable/job_search_1" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="95dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/employerregistration"
+        app:layout_constraintEnd_toEndOf="@+id/employerregistration"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/employerregistration"
+        app:layout_constraintTop_toTopOf="@+id/employerregistration"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/employe_card_1" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Rozgar Mela"
+        app:layout_constraintBottom_toBottomOf="@+id/rozgarmela"
+        app:layout_constraintEnd_toEndOf="@+id/rozgarmela"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/rozgarmela" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="Search Jobs"
+        app:layout_constraintBottom_toBottomOf="@+id/searchjobs"
+        app:layout_constraintEnd_toEndOf="@+id/searchjobs"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/searchjobs" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="121dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Employer Registration"
+        app:layout_constraintBottom_toBottomOf="@+id/employerregistration"
+        app:layout_constraintEnd_toEndOf="@+id/employerregistration"
+        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintStart_toStartOf="@+id/employerregistration" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="112dp"
+        android:layout_height="54dp"
+        android:text="Job/Foregin Study seeker Registration"
+        app:layout_constraintBottom_toBottomOf="@+id/jobforeign"
+        app:layout_constraintEnd_toEndOf="@+id/jobforeign"
+        app:layout_constraintStart_toStartOf="@+id/jobforeign" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="8dp"
+        android:text="Forget Password"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:text="What's New"
+        app:layout_constraintEnd_toStartOf="@+id/loginbutton"
+        app:layout_constraintTop_toBottomOf="@+id/loginbutton" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:onClick="openAi"
+        android:text="Kartavya.Ai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employerregistration" />
+</androidx.constraintlayout.widget.ConstraintLayout>
